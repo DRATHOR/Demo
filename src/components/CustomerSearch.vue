@@ -1,6 +1,6 @@
 <template>
     <div class="customerSearch_container">
-        <h1>Customer Search</h1>
+        <h1>Open Order Search</h1>
         <p>Search by name, bill-to, phone number or just type anything.</p>
         <p>You can also refine using a variety of data attributes to nerrow your search results.</p>
         <h2>Start Searching</h2>

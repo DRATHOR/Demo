@@ -1,19 +1,23 @@
 <template>
   <div id="app">
     <HeaderBar/>
-    <CustomerSearch/>
+    <OpenOrderSearch/>
+    <!-- <CustomerSearch/> -->
   </div>
 </template>
 
 <script>
 import HeaderBar from './components/HeaderBar.vue';
-import CustomerSearch from './components/CustomerSearch.vue';
+// import CustomerSearch from './components/CustomerSearch.vue';
+import OpenOrderSearch from './components/OpenOrderSearch.vue';
 
 export default {
   name: 'App',
   components: {
     HeaderBar,
-    CustomerSearch
+    OpenOrderSearch,
+    
+    
 }
 }
 </script>
