@@ -36,6 +36,18 @@
                     </div>
                     
                 </div>
+                 <div class="row">
+                    <div class="box" v-for="(item, i) in headerList" :key="i">
+                       <div class="card">
+                            <p>ATTN:NICOLLE MONTOYA</p>
+                            <p>2350 W 60 ST #17</p>
+                            <p>HIALEAH, FL, 33016</p>
+                            <p>UNITED STATES</p>
+                            <p>P: 754-244-1137</p>
+                        </div>
+                    </div>
+                    
+                </div>
 
             </div>
 

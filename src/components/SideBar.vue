@@ -7,6 +7,7 @@
             <div class="sidebar_elements" v-if="item.list">
                 <div class="sidebar_elements_item" v-for="(elements, index) in item.list" :key="index">
                     {{ elements.item }}
+                    <span class="sidebar_elements_counter" v-if="elements.count">{{elements.count}}</span>
                 </div>
             </div>
         </div>
@@ -22,21 +23,21 @@ export default {
                 { title: 'AVAILABLE REFINEMENTS' },
                 {
                     title: 'MATCH TYPE', list: [
-                        { item: 'Bill To' },
-                        { item: 'Contact' },
-                        { item: 'Ship To' },
+                        { item: 'Bill To' ,count:57},
+                        { item: 'Contact' ,count:135},
+                        { item: 'Ship To' ,count:75},
                     ]
                 },
                 { title: 'STATE' ,list:[
-                    {item:'AL'},
-                    {item:'AR'},
-                    {item:'CA'},
-                    {item:'DC'},
-                    {item:'FL'},
-                    {item:'GA'},
-                    {item:'LA'},
-                    {item:'MA'},
-                    {item:'MN'},
+                    {item:'AL',count:23},
+                    {item:'AR',count:23},
+                    {item:'CA',count:23},
+                    {item:'DC',count:23},
+                    {item:'FL',count:23},
+                    {item:'GA',count:23},
+                    {item:'LA',count:23},
+                    {item:'MA',count:23},
+                    {item:'MN',count:23},
                 ]},
             ]
         }
@@ -65,5 +66,20 @@ export default {
 }
 .sidebar_elements_item{
     padding:5px 10px;
+    display: flex;
+    align-items: center;
+}
+.sidebar_elements_counter{
+    width:auto;
+    height:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9F7FB;
+    margin-left:10px;
+    padding:5px;
+    border-radius: 3px;
+border:1px solid #DEDDDE;
+font-size: 12px;
 }
 </style>
