@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <HeaderBar />
+    <HeaderBar ShowBottomBar/>
     <OpenOrderSearch/>
     <!-- <CustomerSearch/> -->
   </div>
