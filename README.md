@@ -1,4 +1,4 @@
-# dummyproject
+# msc
 
 ## Project setup
 ```

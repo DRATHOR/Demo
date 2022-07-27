@@ -1,17 +1,20 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <HeaderBar />
+    <OpenOrderSearchHome />
   </div>
 </template>
 
 <script>
-//import HeaderBar from "./components/HeaderBar.vue";
-//import OpenOrderSearchHome from "./components/OpenOrderSearchHome.vue";
-//import OpenOrderSearch from "./components/OpenOrderSearch.vue";
+import HeaderBar from "../components/HeaderBar.vue";
+import OpenOrderSearchHome from "../components/OpenOrderSearchHome.vue";
 
 export default {
   name: "App",
-  components: {},
+  components: {
+    HeaderBar,
+    OpenOrderSearchHome,
+  },
 };
 </script>
 
